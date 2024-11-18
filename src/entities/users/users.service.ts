@@ -31,7 +31,7 @@ export class UsersService {
     token: string,
   ): Promise<Observable<UserDocument>> {
     try {
-      const url = `${this.configService.get<string>('BASE_URL')}:${this.configService.get<string>('PORT')}/business/list?page=${page}&limit=${limit}&email=${email}`;
+      const url = `${this.configService.get<string>('BASE_URL')}/business/list?page=${page}&limit=${limit}&email=${email}`;
 
       const paginatedUsers = this.httpService
         .get(url, {

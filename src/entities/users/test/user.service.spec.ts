@@ -94,8 +94,6 @@ describe('UsersService', () => {
       switch (key) {
         case 'BASE_URL':
           return 'http://localhost';
-        case 'PORT':
-          return '3000';
         case 'X_SOURCE_HEADER':
           return 'source';
         default:

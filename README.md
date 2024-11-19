@@ -43,3 +43,9 @@ $ npm run start:dev
 # unit tests
 $ npm run test
 ```
+
+## API Documentation
+
+You can find the API documentation and test the endpoints using Postman:
+
+[Postman API Documentation](https://www.postman.com/universal-satellite-528972/api-conexa)

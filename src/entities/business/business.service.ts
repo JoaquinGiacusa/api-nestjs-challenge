@@ -1,6 +1,5 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { UsersService } from '../users/users.service';
 import { User } from 'src/schemas/user.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
@@ -9,7 +8,6 @@ import { Model } from 'mongoose';
 export class BusinessService {
   constructor(
     @InjectModel(User.name) private userModel: Model<User>,
-    private usersService: UsersService,
     private configService: ConfigService,
   ) {}
 

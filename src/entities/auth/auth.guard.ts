@@ -30,7 +30,6 @@ export class AuthGuard implements CanActivate {
       if (!user) {
         throw new UnauthorizedException('User does not exist');
       }
-      console.log('user', user);
     } catch {
       throw new UnauthorizedException();
     }

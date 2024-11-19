@@ -10,23 +10,20 @@ This project is a NestJS-based API challenge. It provides a robust and scalable 
 
 ## Project setup
 
-### Prerequisites
-
-- Node.js (>= 12.x)
-- npm (>= 6.x)
-
 ### Installation
 
 1. Clone the repository:
 
-````bash
+```bash
 git clone https://github.com/JoaquinGiacusa/api-nestjs-challenge.git
 cd api-nestjs-challenge
-
+```
 
 ```bash
 $ npm install
-````
+```
+
+## Environment variables
 
 Create a .env file in the root directory of the project and add the environment variables based on .env.example
 
@@ -38,9 +35,6 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## Run tests
